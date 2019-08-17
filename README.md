@@ -13,13 +13,21 @@ tracker_token=
 
 # commands:
 `.game apex <platform> <user>`
-  get the info from a apex legends user
+
+    get the info from a apex legends user
+  
 `.game overwatch <platform> <user>`
-  get the info from a overwatch user
+
+    get the info from a overwatch user
+  
 `.game minecraft host`
-  get info on a minecraft sever
+
+    get info on a minecraft sever
 
 `.api json`
-  look at the help.
+
+    look at the help.
+  
 `.api html`
-  look at the help
+
+    look at the help
