@@ -94,6 +94,21 @@ class ApiCog(commands.Cog):
 
     @api_group.command(name="html")
     async def html_command(self, ctx, url, *keys):
+        """
+        interface with a html page
+
+        .api url [html keys]
+        .api url params [params] keys [html keys]
+        .api url [html keys] params [params]
+
+        keys:
+        nothing: find the first
+        *: find all
+        $: get attr
+        a-b: shorten list between a and b
+        a: select a form list.
+        a=b: find tag(s) with that attr, like: class=title
+        """
         html_keys, params = self.parse_keys(keys)
 
         try:
